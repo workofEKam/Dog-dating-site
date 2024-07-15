@@ -1,8 +1,12 @@
 .gradient-background {
-  height: fit-content;
-  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  height: auto; /* replaced fit-content with auto */
+  background: -webkit-linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background: -moz-linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background: -ms-linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
   background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  -webkit-animation: gradient-animation 18s ease infinite;
+  -moz-animation: gradient-animation 18s ease infinite;
+  -ms-animation: gradient-animation 18s ease infinite;
 }
 .bottom{
   padding-bottom:0px;
